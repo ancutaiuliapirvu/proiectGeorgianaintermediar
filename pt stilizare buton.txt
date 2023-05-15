@@ -1,0 +1,49 @@
+Navbar:
+
+	ca sa scapi de sublinieri avem proprietate css: 
+		text-decoration: none;
+	
+	ordinea gresita:
+		e de la o proprietate de pe 
+			.navbar a{ float: right} - am comentat-o in cod, sunt in ordinea corecta acum - se suprascria ciudat cu flex-ul
+
+	fixare sus pe pagina:
+		https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+		iti lipsea proprietatea de top
+
+
+h1: 
+	bold: la fel ca mai jos pt paragrafe
+
+
+Paragrafe:
+	
+	bold: merge bine - e subtil efectul, bifeaza si debifeaza din dev tools ca sa vezi diferenta; daca vrei mai gros, poti merge pe valori (font-weight: 700 de exemplu) sau pe alte cuvinte cheie (cauta referinta in curs sau pe mdn/w3)
+
+Buton 
+	pune tag-ul de <a> in interiorul butonului.
+		<button id="more"><a> bla bla </a></button>
+
+	ca sa stilizezi starea aia cand mergi cu mouse-ul deasupra folosim pseudoselector (:hover)
+		(referinta la buton - la noi dupa id-ul more si apoi :pseudoselector)
+		#more :hover{
+		
+		}
+
+Calendar h2 
+	ma mai uit, nu ma prind de ce nu vrea
+	//////////////
+
+
+Tabel:
+	mai trebuie doar sa dai un width (valori mari, eu am incercat cu 800 de px, convertesti tu in rem si incearca putin mai mare, le potrivesti de mana elementele dupa)
+	e buna proprietatea de flex-wrap, nu iti mergea pt ca nu aveai width
+
+
+p culoare si marime:
+	nu stiu daca m-am referit la acelasi paragraf pe care voiai tu sa il stilizezi - daca nu merg stilizarile, cea mai simpla abordare e sa targetezi mai specific elementul (eu i-am dat un id) - trebuie sa pui oricum o valoare mai mare la font-size
+
+
+images-container:
+	la fel ca la tabel - lipseste un width
+	dupa ce adaugi width, pozitionezi containerul unde vrei tu pe pagina (cu margin/padding sau cu ceva proprietate de position) si potrivesti spatierea din valori

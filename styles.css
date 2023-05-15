@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows:  2.8em 2.1fr 0.8fr 1.9fr 1fr 0.4fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header header"
+        "bine-ai-venit bine-ai-venit bine-ai-venit"
+        "calendar calendar calendar"
+        "descriereIT descriereIT descriereIT"
+        "parteneri parteneri parteneri"
+        "footer footer footer";
+  }
+    
+  .header { grid-area: header;}
+    
+  .bine-ai-venit { grid-area: bine-ai-venit; }
+    
+  .calendar { grid-area: calendar; }
+    
+  .descriereIT { grid-area: descriereIT; }
+    
+  .parteneri { grid-area: parteneri; }
+    
+  .footer { grid-area: footer; }
+    
+  
+  nav{
+    background-color: #141e4c;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; nu merge - https://www.w3schools.com/howto/howto_css_fixed_menu.asp - iti lipsea proprietatea de top */
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  nav a{
+    color:#eaeaea;
+    font-size: 12px;
+  }
+  
+  img{
+    margin-top: 5px;
+    width: auto;
+    height: 60px;
+    margin-left: 175px;
+  } 
+  
+  .navbar {
+    overflow: hidden;
+    margin-right: 200px;
+    font-weight: bold;
+  }
+
+  /* asta strica ordinea din navbar: */
+/*   
+  .navbar a {
+    float: right; 
+  } */
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: #141e4c;
+    color:#eaeaea;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .bine-ai-venit{
+    background-color:#141e4c;
+    margin-top: 55px;
+    color:#eaeaea;
+  }
+  
+  h1{
+    margin-top: 130px;
+    margin-left: 175px;
+    font-size: 3.5rem;
+    font-weight: bold;   
+    /* nu se face bold - bifeaza si debifeaza proprietatea din dev tools - merge boldul, e doar subtil*/
+  }
+  
+  .paragrafe{
+    margin-left: 175px;
+    font-weight: bold; 
+    /* nu se face bold - bifeaza si debifeaza proprietatea din dev tools - merge boldul, e doar subtil*/
+  }
+
+
+  
+  .span{
+  color:#fbb44c;
+  }
+  
+  .bine-ai-venit img{
+    height: 24px;
+    width: auto;
+    margin-left:1rem;
+  }
+  
+  #more{
+    background-color:#2bb686;
+    color: #eaeaea;
+    border: 2px solid #2bb686;
+    border-radius: 5px;
+    width: 260px;
+    padding:1rem;
+    margin-top: 40px;
+    margin-bottom: 230px;
+    /* nu stiu sa stilizez butonul incat sa dispara culoarea cand sunt cu cursorul pe el */
+  }
+
+  /* Stilizare buton (pseudoselector :hover) */
+  #more :hover{
+    background-color: #141e4c;
+    border: 2px solid #2bb686;
+    width: 260px;
+  }
+  
+  
+  .calendar h2{
+    text-align: center; 
+    color: #101d42;
+    font-weight: bold; 
+    margin: 1.75rem;
+    font-size: 28px;
+    /* nu se face bold */
+  }
+  
+  .calendar h3{
+    font-size: 24px;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .tabel{
+    display: flex;
+    justify-content: center;
+    /* modifici tu valoarea */
+    width: 800px;
+    flex-wrap: wrap;
+    
+    margin-left: 175px;
+    margin-right: 175px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .calendar .bar{
+    height: 0.25rem;
+    background-color: #2bb686;
+    border-radius: 10px;
+  }
+  
+  .descriereIT{
+    background-color: #dfedf5;
+  }
+  
+  .descriereIT h2, .descriereIT p{
+    text-align: center;
+    margin-bottom: 1.75rem;
+  }
+  
+  h2{
+    font-size: 1.75rem;
+    padding-top: 1.75rem;
+    color: #101d42;
+    font-weight: bold;
+  }
+  
+  #descriereParagraf{
+    margin-left: 175px;
+    margin-right: 175px;
+    color: #2b2922;
+    font-size: 0.875rem;
+    /* nu isi schimba marimea si culoarea - merge acum - daca nu merge ceva, incearca sa il stilizezi mai specific - sa ii adaugi un id e cea mai rapida si usoara solutie - iti trebuie o valoare mai mare pentru fontsize */
+  }
+  
+  .images-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* la fel ca la tabelul de mai sus - adaugi un width, pozitionezi ca mai sus, potrivesti din valori */
+  }
